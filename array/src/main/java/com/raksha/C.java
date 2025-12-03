@@ -3,28 +3,32 @@ import java.util.Scanner;
 public class C {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("give the size of the array");
-		int size = sc.nextInt();
-		int arr[] = new int[size];
+		System.out.println("enter the size..........");
+		int n = sc.nextInt();
 		
-		for(int i = 0; i<size; i++) {
-			System.out.println("give" +i+ "element");
+		int arr[] = new int[n];
+		
+		System.out.println("enter the elements..........");
+		for(int i = 0; i<n; i++) {
 			arr[i] = sc.nextInt();
 		}
-		System.out.println("give the element to find");
-		int element = sc.nextInt();
-		int flag = 0;
 		
-		for(int i = 0; i<size; i++) {
-		    if(arr[i] == element) {
-			flag = 1;
-			System.out.println("element found at index" + i);
+		System.out.println("enter the target element.........");
+		int x = sc.nextInt();
+		
+		boolean flag = false;
+		for(int i=0; i<n; i++) {
+			if (arr[i] == x) {
+				flag = true;
+				break;
+			}
 		}
-		}
-	
-	if (flag == 0) {
-		System.out.println("element not found ");
-	}
 
+	if (flag == true) {
+		System.out.println("element found..........");
+	}
+	else {
+		System.out.println("element not found");
+	}
 }
 }
