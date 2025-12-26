@@ -1,6 +1,6 @@
 package com.raksha;
 import java.util.Scanner;
-public class FoundFactorsOfNo {
+public class OptimizecodeofFactorsC {
 	
 	public static int factorCount(int n) {
 		int count= 0;
